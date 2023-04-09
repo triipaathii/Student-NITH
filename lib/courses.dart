@@ -18,7 +18,7 @@ class _TableColumnResize extends State<TableColumnResize> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            appBar: AppBar(
+      appBar: AppBar(
         backgroundColor: const Color(0xff640f12),
         primary: true,
         title: Text(
@@ -105,7 +105,7 @@ class _TableColumnResize extends State<TableColumnResize> {
                       width: 10,
                       height: 10,
                       decoration: BoxDecoration(
-                        color: Color..withOpacity(0.8),
+                        color: Colors.black.withOpacity(0.8),
                         shape: BoxShape.circle,
                       ),
                     ),

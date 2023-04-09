@@ -9,9 +9,14 @@ class Result extends StatefulWidget {
 }
 
 class _ResultState extends State<Result> {
-
-
-  
+  final result = {
+    "branch": "CSE",
+    "roll_no": "20bcs009",
+    "graduation_year": "2024",
+    "Current Semester": "6th",
+    "SGPI": "9.99",
+    "CGPI": "9.6"
+  };
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -33,9 +38,51 @@ class _ResultState extends State<Result> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-
-
-
+              SizedBox(
+                height: height * 0.04,
+              ),
+              Text(
+                "Branch: ${result["branch"]}",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 18),
+              ),
+              SizedBox(
+                height: height * 0.02,
+              ),
+              Text(
+                "Roll No: ${result["roll_no"]}",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 18),
+              ),
+              SizedBox(
+                height: height * 0.02,
+              ),
+              Text(
+                "Graduation Year: ${result["graduation_year"]}",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 18),
+              ),
+              SizedBox(
+                height: height * 0.02,
+              ),
+              Text(
+                "Current Semester: ${result["Current Semester"]}",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 18),
+              ),
+              SizedBox(
+                height: height * 0.02,
+              ),
+              Text(
+                "SGPI: ${result["SGPI"]}",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 18),
+              ),
+              SizedBox(
+                height: height * 0.02,
+              ),
+              Text(
+                "CGPI: ${result["cgpi"]}",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 18),
+              ),
+              SizedBox(
+                height: height * 0.02,
+              )
             ],
           ),
         ),
