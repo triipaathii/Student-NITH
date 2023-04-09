@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TableColumnResize extends StatefulWidget {
   const TableColumnResize({super.key});
@@ -17,13 +18,19 @@ class _TableColumnResize extends State<TableColumnResize> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Table Column Resize"),
+            appBar: AppBar(
+        backgroundColor: const Color(0xff640f12),
+        primary: true,
+        title: Text(
+          "Semester Registration",
+          style:
+              GoogleFonts.abel(fontWeight: FontWeight.bold, letterSpacing: 1.5),
+        ),
       ),
       body: Center(
         child: Container(
           width: MediaQuery.of(context).size.width,
-          height: 200,
+          height: double.infinity,
           decoration: BoxDecoration(
             border: Border.all(
               color: Colors.black,
@@ -98,7 +105,7 @@ class _TableColumnResize extends State<TableColumnResize> {
                       width: 10,
                       height: 10,
                       decoration: BoxDecoration(
-                        color: Colors.blue.withOpacity(1),
+                        color: Color..withOpacity(0.8),
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -109,6 +116,9 @@ class _TableColumnResize extends State<TableColumnResize> {
           ),
           const DataColumn(label: Text("Column 2")),
           const DataColumn(label: Text("Column 3")),
+          const DataColumn(label: Text("Column 4")),
+          const DataColumn(label: Text("Column 5")),
+          const DataColumn(label: Text("Column 6")),
         ],
         rows: List.generate(
           20,
@@ -127,6 +137,9 @@ class _TableColumnResize extends State<TableColumnResize> {
               ),
               DataCell(Text("Column2: Row index $index")),
               DataCell(Text("Column3: Row index $index")),
+              DataCell(Text("Column4: Row index $index")),
+              DataCell(Text("Column5: Row index $index")),
+              DataCell(Text("Column6: Row index $index")),
             ],
           ),
         ));

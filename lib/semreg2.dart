@@ -35,35 +35,33 @@ class _Semreg2State extends State<Semreg2> {
               SizedBox(
                 height: height * 0.05,
               ),
-              Text(
-                "Details of the Courses (Registered during current Semester) :",
-                style: GoogleFonts.abel(color: Colors.black, fontSize: 16),
+              Center(
+                child: InkWell(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: const Color(0xff640f12),
+                          borderRadius: BorderRadius.circular(16)),
+                      height: height * 0.20,
+                      width: width * 0.5,
+                      margin: EdgeInsets.symmetric(horizontal: width * 0.05),
+                      child: Text(
+                        "Details of the Courses (Registered during current Semester)",
+                        textAlign: TextAlign.center,
+                        style:
+                            GoogleFonts.abel(color: Colors.white, fontSize: 18),
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TableColumnResize()));
+                    }),
               ),
               SizedBox(
-                height: height * 0.01,
-              ),
-              InkWell(
-                child: Container(
-                  padding: const EdgeInsets.all(10),
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      color: const Color(0xff640f12),
-                      borderRadius: BorderRadius.circular(16)),
-                  height: height * 0.15,
-                  width: double.infinity,
-                  margin: EdgeInsets.symmetric(horizontal: width * 0.25),
-                  child: Text(
-                    "SEMESTER REGISTRATION",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.abel(color: Colors.white, fontSize: 18),
-                  ),
-                ),
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => TableColumnResize()));
-                }),
-              SizedBox(
-                height: height * 0.03,
+                height: height * 0.05,
               ),
               Center(
                 child: ElevatedButton(
