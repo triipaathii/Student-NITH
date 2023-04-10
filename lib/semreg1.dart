@@ -353,7 +353,7 @@ class _Semreg1State extends State<Semreg1> {
                 ),
               ),
               SizedBox(
-                height: height * 0.03,
+                height: height * 0.07,
               ),
               Center(
                 child: ElevatedButton(
@@ -376,7 +376,7 @@ class _Semreg1State extends State<Semreg1> {
                     )),
               ),
               SizedBox(
-                height: height * 0.05,
+                height: height * 0.07,
               ),
             ],
           ),
