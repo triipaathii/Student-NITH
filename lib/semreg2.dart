@@ -11,6 +11,19 @@ class Semreg2 extends StatefulWidget {
 }
 
 class _Semreg2State extends State<Semreg2> {
+  final rollNoController = TextEditingController();
+  final registrationSemesterNumberController = TextEditingController();
+  final nameOfHostelController = TextEditingController();
+  final roomNumberController = TextEditingController();
+  final programmeController = TextEditingController();
+  final nameController = TextEditingController();
+  final fatherNameController = TextEditingController();
+  final addressForCorrespondenceController = TextEditingController();
+  final pincode1Controller = TextEditingController();
+  final permanentAddressController = TextEditingController();
+  final pincode2Controller = TextEditingController();
+  final mobileController = TextEditingController();
+  final eMailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -33,7 +46,7 @@ class _Semreg2State extends State<Semreg2> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: height * 0.05,
+                height: height * 0.06,
               ),
               Center(
                 child: InkWell(
@@ -43,7 +56,7 @@ class _Semreg2State extends State<Semreg2> {
                       decoration: BoxDecoration(
                           color: const Color(0xff640f12),
                           borderRadius: BorderRadius.circular(16)),
-                      height: height * 0.20,
+                      height: height * 0.15,
                       width: width * 0.5,
                       margin: EdgeInsets.symmetric(horizontal: width * 0.05),
                       child: Text(
@@ -57,11 +70,117 @@ class _Semreg2State extends State<Semreg2> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => TableColumnResize()));
+                              builder: (context) => const Courses()));
                     }),
               ),
               SizedBox(
                 height: height * 0.05,
+              ),
+              Text(
+                " Result of Previous Semester",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 22),
+              ),
+              SizedBox(
+                height: height * 0.03,
+              ),
+              Text(
+                "  Previous Semester Number :",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 16),
+              ),
+              SizedBox(
+                height: height * 0.01,
+              ),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: width * 0.02),
+                decoration: BoxDecoration(
+                    color: const Color(0xffd9d9d9),
+                    borderRadius: BorderRadius.circular(13)),
+                child: TextFormField(
+                  controller: programmeController,
+                  keyboardType: TextInputType.emailAddress,
+                  style: GoogleFonts.abel(),
+                  cursorColor: const Color(0xff08243c),
+                  decoration: const InputDecoration(border: InputBorder.none),
+                ),
+              ),
+              SizedBox(
+                height: height * 0.03,
+              ),
+              Text(
+                "  SGPI :",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 16),
+              ),
+              SizedBox(
+                height: height * 0.01,
+              ),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: width * 0.02),
+                decoration: BoxDecoration(
+                    color: const Color(0xffd9d9d9),
+                    borderRadius: BorderRadius.circular(13)),
+                child: TextFormField(
+                  controller: programmeController,
+                  keyboardType: TextInputType.emailAddress,
+                  style: GoogleFonts.abel(),
+                  cursorColor: const Color(0xff08243c),
+                  decoration: const InputDecoration(border: InputBorder.none),
+                ),
+              ),
+              SizedBox(
+                height: height * 0.03,
+              ),
+              Text(
+                "  CGPI :",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 16),
+              ),
+              SizedBox(
+                height: height * 0.01,
+              ),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: width * 0.02),
+                decoration: BoxDecoration(
+                    color: const Color(0xffd9d9d9),
+                    borderRadius: BorderRadius.circular(13)),
+                child: TextFormField(
+                  controller: programmeController,
+                  keyboardType: TextInputType.emailAddress,
+                  style: GoogleFonts.abel(),
+                  cursorColor: const Color(0xff08243c),
+                  decoration: const InputDecoration(border: InputBorder.none),
+                ),
+              ),
+              SizedBox(
+                height: height * 0.03,
+              ),
+              Text(
+                " Courses with F Grade (if any) :",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 16),
+              ),
+              SizedBox(
+                height: height * 0.01,
+              ),
+              Text(
+                " Write Course Codes :",
+                style: GoogleFonts.abel(color: Colors.black, fontSize: 14),
+              ),
+              SizedBox(
+                height: height * 0.01,
+              ),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: width * 0.02),
+                decoration: BoxDecoration(
+                    color: const Color(0xffd9d9d9),
+                    borderRadius: BorderRadius.circular(13)),
+                child: TextFormField(
+                  controller: programmeController,
+                  keyboardType: TextInputType.emailAddress,
+                  style: GoogleFonts.abel(),
+                  cursorColor: const Color(0xff08243c),
+                  decoration: const InputDecoration(border: InputBorder.none),
+                ),
+              ),
+              SizedBox(
+                height: height * 0.07,
               ),
               Center(
                 child: ElevatedButton(
@@ -84,7 +203,7 @@ class _Semreg2State extends State<Semreg2> {
                     )),
               ),
               SizedBox(
-                height: height * 0.05,
+                height: height * 0.07,
               ),
             ],
           ),

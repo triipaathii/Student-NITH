@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:student_nith/hostel.dart';
+import 'package:student_nith/login.dart';
 import 'package:student_nith/profile.dart';
 import 'package:student_nith/result.dart';
 import 'package:student_nith/semreg1.dart';
@@ -40,9 +41,9 @@ class Homepage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/bg.jpg"),
+                image: AssetImage("assets/images/bg5.jpg"),
                 fit: BoxFit.cover,
-                opacity: 0.8)),
+                opacity: 1)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -53,7 +54,7 @@ class Homepage extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: const Color(0xff640f12),
                       borderRadius: BorderRadius.circular(16)),
-                  height: height * 0.15,
+                  height: height * 0.12,
                   width: double.infinity,
                   margin: EdgeInsets.symmetric(horizontal: width * 0.25),
                   child: Text(
@@ -73,7 +74,7 @@ class Homepage extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: const Color(0xff640f12),
                       borderRadius: BorderRadius.circular(16)),
-                  height: height * 0.15,
+                  height: height * 0.12,
                   width: double.infinity,
                   margin: EdgeInsets.symmetric(horizontal: width * 0.25),
                   child: Text(
@@ -93,7 +94,7 @@ class Homepage extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: const Color(0xff640f12),
                       borderRadius: BorderRadius.circular(16)),
-                  height: height * 0.15,
+                  height: height * 0.12,
                   width: double.infinity,
                   margin: EdgeInsets.symmetric(horizontal: width * 0.25),
                   child: Text(
@@ -106,6 +107,23 @@ class Homepage extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Result()));
                 }),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LogIn()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: width * 0.05, vertical: height * 0.01),
+                      backgroundColor: const Color(0xff08243c),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(13))),
+                  child: Text(
+                    "LOGOUT",
+                    style: GoogleFonts.abel(color: Colors.white, fontSize: 20),
+                  )),
           ],
         ),
       ),
