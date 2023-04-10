@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1076468709163",
+    "project_id": "studentnith-f671b",
+    "storage_bucket": "studentnith-f671b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076468709163:android:6304bbb58929f16a46776e",
+        "android_client_info": {
+          "package_name": "com.example.student_nith"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076468709163-70jif1o11uf23gnndictv5fdabe0pcag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_gkkZHuADASjbMgqUWyVDOozG7AfKjzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076468709163-70jif1o11uf23gnndictv5fdabe0pcag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

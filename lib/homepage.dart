@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:student_nith/hostel.dart';
 import 'package:student_nith/login.dart';
 import 'package:student_nith/profile.dart';
@@ -87,23 +89,22 @@ class Homepage extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Result()));
                 }),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const LogIn()));
-                  },
-                  style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: width * 0.05, vertical: height * 0.01),
-                      backgroundColor: const Color(0xff08243c),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(13))),
-                  child: Text(
-                    "LOGOUT",
-                    style: GoogleFonts.abel(color: Colors.white, fontSize: 20),
-                  )),
+            ElevatedButton(
+                onPressed: () async {
+                  final prefs = await SharedPreferences.getInstance();
+                  prefs.remove("rollno");
+                  Get.offAll(() => const LogIn());
+                },
+                style: ElevatedButton.styleFrom(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: width * 0.05, vertical: height * 0.01),
+                    backgroundColor: const Color(0xff08243c),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(13))),
+                child: Text(
+                  "LOGOUT",
+                  style: GoogleFonts.abel(color: Colors.white, fontSize: 20),
+                )),
           ],
         ),
       ),
