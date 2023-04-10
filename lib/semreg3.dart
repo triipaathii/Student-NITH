@@ -11,19 +11,11 @@ class Semreg3 extends StatefulWidget {
 
 class _Semreg3State extends State<Semreg3> {
   bool isChecked = false;
-  final rollNoController = TextEditingController();
-  final registrationSemesterNumberController = TextEditingController();
-  final nameOfHostelController = TextEditingController();
-  final roomNumberController = TextEditingController();
-  final programmeController = TextEditingController();
-  final nameController = TextEditingController();
-  final fatherNameController = TextEditingController();
-  final addressForCorrespondenceController = TextEditingController();
-  final pincode1Controller = TextEditingController();
-  final permanentAddressController = TextEditingController();
-  final pincode2Controller = TextEditingController();
-  final mobileController = TextEditingController();
-  final eMailController = TextEditingController();
+  final amountController = TextEditingController();
+  final dateOfPaymentController = TextEditingController();
+  final transactionNumberController = TextEditingController();
+  final studentDeclarationDateController = TextEditingController();
+  
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +61,7 @@ class _Semreg3State extends State<Semreg3> {
                     color: const Color(0xffd9d9d9),
                     borderRadius: BorderRadius.circular(13)),
                 child: TextFormField(
-                  controller: programmeController,
+                  controller: amountController,
                   keyboardType: TextInputType.emailAddress,
                   style: GoogleFonts.abel(),
                   cursorColor: const Color(0xff08243c),
@@ -92,7 +84,7 @@ class _Semreg3State extends State<Semreg3> {
                     color: const Color(0xffd9d9d9),
                     borderRadius: BorderRadius.circular(13)),
                 child: TextFormField(
-                  controller: programmeController,
+                  controller: dateOfPaymentController,
                   keyboardType: TextInputType.emailAddress,
                   style: GoogleFonts.abel(),
                   cursorColor: const Color(0xff08243c),
@@ -115,7 +107,7 @@ class _Semreg3State extends State<Semreg3> {
                     color: const Color(0xffd9d9d9),
                     borderRadius: BorderRadius.circular(13)),
                 child: TextFormField(
-                  controller: programmeController,
+                  controller: transactionNumberController,
                   keyboardType: TextInputType.emailAddress,
                   style: GoogleFonts.abel(),
                   cursorColor: const Color(0xff08243c),
@@ -171,7 +163,7 @@ class _Semreg3State extends State<Semreg3> {
                     color: const Color(0xffd9d9d9),
                     borderRadius: BorderRadius.circular(13)),
                 child: TextFormField(
-                  controller: programmeController,
+                  controller: studentDeclarationDateController,
                   keyboardType: TextInputType.emailAddress,
                   style: GoogleFonts.abel(),
                   cursorColor: const Color(0xff08243c),
