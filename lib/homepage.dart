@@ -80,26 +80,6 @@ class Homepage extends StatelessWidget {
                   width: double.infinity,
                   margin: EdgeInsets.symmetric(horizontal: width * 0.25),
                   child: Text(
-                    "HOSTEL ROOM ALLOTMENT",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.abel(color: Colors.white, fontSize: 18),
-                  ),
-                ),
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Hostel()));
-                }),
-            InkWell(
-                child: Container(
-                  padding: const EdgeInsets.all(10),
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      color: const Color(0xff640f12),
-                      borderRadius: BorderRadius.circular(16)),
-                  height: height * 0.12,
-                  width: double.infinity,
-                  margin: EdgeInsets.symmetric(horizontal: width * 0.25),
-                  child: Text(
                     "RESULT",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.abel(color: Colors.white, fontSize: 18),

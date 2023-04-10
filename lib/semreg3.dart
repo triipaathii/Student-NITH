@@ -12,22 +12,15 @@ class Semreg3 extends StatefulWidget {
 }
 
 class _Semreg3State extends State<Semreg3> {
+
   bool isChecked1 = false;
   bool isChecked2 = false;
   bool isLoading = false;
-  final rollNoController = TextEditingController();
-  final registrationSemesterNumberController = TextEditingController();
-  final nameOfHostelController = TextEditingController();
-  final roomNumberController = TextEditingController();
-  final programmeController = TextEditingController();
-  final nameController = TextEditingController();
-  final fatherNameController = TextEditingController();
-  final addressForCorrespondenceController = TextEditingController();
-  final pincode1Controller = TextEditingController();
-  final permanentAddressController = TextEditingController();
-  final pincode2Controller = TextEditingController();
-  final mobileController = TextEditingController();
-  final eMailController = TextEditingController();
+  final amountController = TextEditingController();
+  final dateOfPaymentController = TextEditingController();
+  final transactionNumberController = TextEditingController();
+  final studentDeclarationDateController = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +37,7 @@ class _Semreg3State extends State<Semreg3> {
               GoogleFonts.abel(fontWeight: FontWeight.bold, letterSpacing: 1.5),
         ),
       ),
+
       body: isLoading
           ? const Center(
               child: CircularProgressIndicator(
@@ -307,6 +301,7 @@ class _Semreg3State extends State<Semreg3> {
                 ),
               ),
             ),
+
     );
   }
 }
