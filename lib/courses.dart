@@ -78,7 +78,9 @@ class _Courses extends State<Courses> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
+
       backgroundColor: const Color(0xfff1ebce),
+
       appBar: AppBar(
         backgroundColor: const Color(0xff640f12),
         primary: true,
@@ -146,7 +148,9 @@ class _Courses extends State<Courses> {
     return DataTable(
         columns: const [
           DataColumn(
+
             label: Text('S.No.'),
+
           ),
           DataColumn(label: Text("Course Code")),
           DataColumn(label: Text("Course Name")),
