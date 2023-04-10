@@ -16,60 +16,68 @@ class _Courses extends State<Courses> {
   final horizontalScrollController = ScrollController();
   final subjects = [
     {
-      "course_code": "CS-212",
-      "l": 5,
-      "t": 5,
-      "p/d": 8,
-      "course_name": "Software Eng",
-      "credits": 12
+      "course_code": "CS-321",
+      "l": 3,
+      "t": 1,
+      "p/d": 0,
+      "course_name": "Distributed Systems",
+      "credits": 4
     },
     {
-      "course_code": "CS-212",
-      "l": 5,
-      "t": 5,
-      "p/d": 8,
-      "course_name": "Software Eng",
-      "credits": 12
+      "course_code": "CS-322",
+      "l": 3,
+      "t": 1,
+      "p/d": 0,
+      "course_name": "Software Engineering",
+      "credits": 4
     },
     {
-      "course_code": "CS-212",
-      "l": 5,
-      "t": 5,
-      "p/d": 8,
-      "course_name": "Software Eng",
-      "credits": 12
+      "course_code": "CS-323",
+      "l": 3,
+      "t": 1,
+      "p/d": 0,
+      "course_name": "Digital Image Processing",
+      "credits": 4
     },
     {
-      "course_code": "CS-212",
-      "l": 5,
-      "t": 5,
-      "p/d": 8,
-      "course_name": "Software Eng",
-      "credits": 12
+      "course_code": "CS-324",
+      "l": 3,
+      "t": 0,
+      "p/d": 0,
+      "course_name": "Computer Networks",
+      "credits": 3
     },
     {
-      "course_code": "CS-212",
-      "l": 5,
-      "t": 5,
-      "p/d": 8,
-      "course_name": "Software Eng",
-      "credits": 12
+      "course_code": "OET",
+      "l": 3,
+      "t": 0,
+      "p/d": 0,
+      "course_name": "Open Elective",
+      "credits": 3
     },
     {
-      "course_code": "CS-212",
-      "l": 5,
-      "t": 5,
-      "p/d": 8,
-      "course_name": "Software Eng",
-      "credits": 12
+      "course_code": "CS-325",
+      "l": 0,
+      "t": 0,
+      "p/d": 2,
+      "course_name": "Digital Image Processing Lab",
+      "credits": 1
     },
     {
-      "course_code": "CS-212",
-      "l": 5,
-      "t": 5,
-      "p/d": 8,
-      "course_name": "Software Eng",
-      "credits": 12
+      "course_code": "CS-326",
+      "l": 0,
+      "t": 0,
+      "p/d": 2,
+      "course_name": "Computer Networks Lab",
+      "credits": 1
+    },
+    {
+      "course_code": "CS-329",
+      "l": 0,
+      "t": 0,
+      "p/d": 2,
+      "course_name": "Seminar",
+      "credits": 1
     },
   ];
 
@@ -78,9 +86,7 @@ class _Courses extends State<Courses> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
-
       backgroundColor: const Color(0xfff1ebce),
-
       appBar: AppBar(
         backgroundColor: const Color(0xff640f12),
         primary: true,
@@ -148,9 +154,7 @@ class _Courses extends State<Courses> {
     return DataTable(
         columns: const [
           DataColumn(
-
             label: Text('S.No.'),
-
           ),
           DataColumn(label: Text("Course Code")),
           DataColumn(label: Text("Course Name")),
